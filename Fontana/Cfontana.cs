@@ -39,9 +39,9 @@ namespace Fontana
             Manutenzioni.Clear();
         }
         // metodo personalizzato
-        public float CalcolaConsumoPeriodo(int giorni)
+        public float CalcolaConsumoMensile()
         {
-            return ConsumoAcqua * giorni;
+            return ConsumoAcqua * 30;
         }
     }
 }

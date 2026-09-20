@@ -4,9 +4,9 @@ namespace Fontana
 {
     public class Cpiazza : Cfontana
     {
-        protected float Diametro { get; set; }
-        protected string Citta { get; set; }
-        protected string NomePiazza { get; set; }
+        public float Diametro { get; set; }
+        public string Citta { get; set; }
+        public string NomePiazza { get; set; }
 
         public Cpiazza() : base()
         {
@@ -36,7 +36,7 @@ namespace Fontana
             }
 
             return $"Nome piazza: {NomePiazza}, Città: {Citta}, Diametro: {Diametro}m\n" +
-                   $"Nome fontana: {NomeFontana}, Autore: {Autore}, Consumo: {ConsumoAcqua}L/giorno, Stato: {stato}, Manutenzioni pendenti: {Manutenzioni.Count}";
+                   $"Nome fontana: {NomeFontana}, Autore: {Autore}, Consumo: {ConsumoAcqua}L/giorno, Stato: {stato}, Manutenzioni: {Manutenzioni.Count}\n";
         }
 
     }
